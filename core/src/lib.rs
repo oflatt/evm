@@ -8,12 +8,12 @@ extern crate alloc;
 extern crate core;
 
 mod error;
-mod eval;
 mod memory;
 mod opcode;
 mod stack;
 mod utils;
 mod valids;
+pub mod eval;
 
 pub use crate::error::{Capture, ExitError, ExitFatal, ExitReason, ExitRevert, ExitSucceed, Trap};
 pub use crate::memory::Memory;
